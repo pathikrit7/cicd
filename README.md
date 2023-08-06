@@ -2,9 +2,12 @@
 
 1. Dockerfile contains the nginx image which is listening on port 8080
 
+```
 docker build -t webserver .
+```
+```
 docker run -it --rm -d -p 8888:8080 --name web webserver
-
+```
 Should be able to view the contents of index.html by visiting localhost:8888
 
 2. terraform folder has the terraform to push it to my ECR registry/repository, state is stored in an S3 bucket but it can be modified to run locally to validate/plan.
