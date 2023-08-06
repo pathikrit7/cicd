@@ -6,8 +6,7 @@ replicaCount: 1
 
 image:
   repository: 591309224693.dkr.ecr.us-east-1.amazonaws.com/nginx-hello-world
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
+  pullPolicy: Always
   tag: "latest"
 
 imagePullSecrets: []
