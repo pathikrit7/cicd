@@ -46,4 +46,4 @@ jobs:
 
       - name: Deploy helm chart to EKS
         run: |
-          helm install hello-world ./helm
+          helm upgrade --install hello-world ./helm
